@@ -4,7 +4,7 @@ const { checkIsAuth } = require('./helpers')
 router.get('/google', passport.authenticate('google', { scope: ['email', 'profile'] }))
 
 router.get('/', checkIsAuth, (req, res) => {
-    res.render('index.hbs', { title: 'Login'})
+    res.render('index.hbs', { title: 'Login', jsPatch: 'login.js', cssPath: 'login.css'})
 })
 
 router.get(

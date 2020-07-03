@@ -16,7 +16,7 @@ require('./passport')(passport)
 
 const connectDB = require('./config/db')
 
-app.engine('.hbs', exphbs({ defaultLayout: 'main', extname: '.hbs'}))
+app.engine('.hbs', exphbs({ defaultLayout: 'main', extname: '.hbs', partialsDir: 'views/partials'}))
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(logger('dev'))
 
@@ -38,10 +38,11 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 // Set global var
-app.use(function (req, res, next) {
-  res.locals.user = req.user || null
-  next()
-})
+// app.use(function(req, res, next) {
+//   res.locals.user = req.user;
+//   console.log(req.user)
+//   next()
+// });
 
 app.use('/', require('./route'))
 app.use('/auth', require('./route'))
@@ -54,6 +55,8 @@ app.use(function(req, res){
 app.use(function(req, res){
   res.status(500).render('500.hbs', { url: req.headers.host + req.url, title: '404 Not Found' });
 });
+
+
 
 const server = httpServer.createServer(app)
 const io = socket(server)

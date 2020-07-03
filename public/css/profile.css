@@ -1,0 +1,19 @@
+.profile {
+    width: 100%;
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
+
+.profile img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    height: 50px;
+}
+.profile .name {
+    font-size: 10px;
+    opacity: 0.5;
+    text-transform: capitalize;
+}

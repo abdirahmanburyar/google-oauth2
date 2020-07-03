@@ -1,16 +1,19 @@
-
-    <div class="dashboard">
-        <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{photo}}" alt="">
-                </div>
-                <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div>
+<div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+        <div class="card h-100">
+        <div class="view overlay">
+            <img class="card-img-top" src="{{photo}}"
+            alt="Card image cap">
+            <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+            </a>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">{{name}}</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+        </div>
+        </div>
     </div>
+</div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,83 +9,14 @@ body{
     width: 100%;
     background-color: #bbb5c3;
 }
-.login {
-    width: 500px;
-    margin: 65px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 20px solid rgb(214, 121, 34);
-    flex-direction: column;
-    padding: 10px;
-    min-height: 600px;
-    border-radius: 8px;
-}
-.section {
-    width: 500px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-.google{
-    margin: 5px;
-    width: 330px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 17px;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #ff4081;
-    border-color: #ff4081;
-}
-.google a, .facebook a {
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.left {
-    font-size: 20px;
-    color: #e21111;
-    margin-right: 10px;
-}
-.facebook{
-    margin: 5px;
-    width: 330px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 17px;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #405bff;
-    border-color: #405bff;
-}
-.facebook a {
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
-}
-.facebook .fa-facebook, .fa-google{
-    font-size: 29px;
-    color: wheat;
-}
-small {
-    font-size: 30px;
-    text-transform: uppercase;
-    opacity: 0.6;
-
+.non-footer {
+    min-height: 500px !important;
+    margin-top: 100px;
+    margin-bottom: 40px;
 }
 .not-found{
     display: flex;
     justify-self: center;
     align-items: center;
     flex-direction: column;
-}
-.dashboard .card{
-    width: 300px !important;
 }
